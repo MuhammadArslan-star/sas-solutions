@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/screen_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTecnication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:elevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rlImage"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_80sdp">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivImage"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:padding="@dimen/_6sdp"
+                android:adjustViewBounds="true"
+                app:riv_corner_radius="@dimen/_5sdp"
+                android:src="@drawable/plumber"/>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_toEndOf="@+id/rlImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/tvBookNow"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="Ashley"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tvSkill"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="Car Panter"
+                    android:paddingEnd="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:textColor="@color/buttonColor"
+                    android:textSize="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <TextView
+                    android:id="@+id/tvExp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:text="Exp: 1 year"
+                    android:paddingEnd="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:theme="@style/RatingBar"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:rating="3.5"/>
+
+                    <TextView
+                        android:id="@+id/tvRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:text="(3.5)"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+           <TextView
+               android:id="@+id/tvBookNow"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/book_now"
+               android:layout_alignParentEnd="true"
+               android:layout_centerVertical="true"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:background="@drawable/text_bg"
+               android:padding="@dimen/_4sdp"
+               android:textSize="@dimen/_10sdp"
+               android:fontFamily="@font/montserrat_medium"
+               android:textColor="@color/white"/>
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

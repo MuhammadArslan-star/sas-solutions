@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlTopProducts"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rlCategory"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_centerHorizontal="true"
+        android:elevation="@dimen/_1sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@drawable/image_bg"
+        android:layout_marginBottom="@dimen/_4sdp">
+
+        <LinearLayout
+            android:id="@+id/llImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_above="@+id/tvCategoryName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_2sdp">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivCategoryImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_6sdp"
+                app:riv_corner_radius="@dimen/_10sdp"
+                android:src="@drawable/logo"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tvCategoryName"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            android:text="@string/app_name"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
